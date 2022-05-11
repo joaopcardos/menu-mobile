@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <h1>LOGO</h1>
+            </a>
+
+            <div class="mobile-menu" id="mobilemenu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+
+            <ul class="nav-list" id="navlist">
+
+
+                <li><a href="#inicio" target="_self">Inicio</a></li>
+                <li><a href="#sobre" >Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <h1>home</h1>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h1>sobre</h1>
+    </section>
+
+    <section class="contato" id="contato">
+        <h1>contato</h1>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h1>Serviços</h1>
+    </section>
+</body>
+<script>
+
+
+
+    let mobilemenu = document.getElementById('mobilemenu')
+
+    mobilemenu.addEventListener('click', function () {
+
+        //  adicionar o icone de fechar
+
+        if (mobilemenu.classList.contains('active')) {
+
+            mobilemenu.classList.remove('active')
+        } else {
+            mobilemenu.classList.add('active')
+        }
+
+
+        //  abrir e fechar o menu mobile
+
+
+        let navlist = document.getElementById('navlist')
+
+        if (navlist.classList.contains('active')) {
+
+            navlist.classList.remove('active')
+        } else {
+            navlist.classList.add('active')
+
+        }
+
+    })
+
+
+   
+
+
+</script>
+
+</html>
